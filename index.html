@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="red darken-1">
+                <div class="nav-wrapper container red darken-1">
+                    <a href="#" class="brand-logo">Instant Karaoke</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#">Search</a>
+                        </li>
+                        <li>
+                            <a href="#">Video</a>
+                        </li>
+                        <li>
+                            <a href="#">Lyrics</a>
+                        </li>
+                        <li>
+                            <a href="#">Wiki</a>
+                        </li>
+                        <li>
+                            <a href="#">Shows</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Method to create a dropdown menu at small screen sizes             -->
+            <ul class="sidenav" id="mobile-demo">
+                <li>
+                    <a href="#">Search</a>
+                </li>
+                <li>
+                    <a href="#">Video</a>
+                </li>
+                <li>
+                    <a href="#">Lyrics</a>
+                </li>
+                <li>
+                    <a href="#">Wiki</a>
+                </li>
+                <li>
+                    <a href="#">Shows</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="video">
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/video/musicVideo.mp4" type="video/mp4" align="middle">
+            </video>
+        </div>
+    </div>
+
+    <div class="container" id="content">
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s10">
+                <div class="card white" id="search-box">
+                    <div class="card-content black-text">
+                        <a href="#search">
+                            <h4>Search for your favorite song!</h4>
+                        </a>
+                        <form>
+                            <input class="songInput" type="text" placeholder="Enter song name here" size="50px"></input>
+                            <input id="artist-input" type="text" placeholder="Enter band name here" size="50px"></input>
+                            <input id="select-artist" type="submit" value="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col s1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12" id="instructions">
+                <h1>Step 1: Play the video to hear the song</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <p>s12 m6 l3</p>
+            </div>
+            <div class="col s12 m6 l3">
+                <p>s12 m6 l3</p>
+            </div>
+            <div class="col s12 m6 l3">
+                <p>s12 m6 l3</p>
+            </div>
+            <div class="col s12 m6 l3">
+                <p>s12 m6 l3</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <div class="lyrics">
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/k1uUIJPD0Nk">
+            </iframe>
+        </div>
+
+        <!-- 
+            
+            https://www.youtube.com/watch?v=UfBm-F5vkkg&index=2&list=PLBg1SJiXSxfIShNlZOl2PqFsy0eLfgcIb&t=0s
+            
+            Page Content goes here -->
+    </div>
+</body>
+
+</html>
