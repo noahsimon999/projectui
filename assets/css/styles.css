@@ -21,6 +21,11 @@ nav {
     text-align: center;
     overflow: hidden;
     word-break: break-word;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 100px;
 
 }
 
@@ -41,11 +46,35 @@ nav {
     cursor: pointer;
 }
 
-#instructions {
+
+
+.page-break {
+    margin-top: 100px;
     font-family: "Lobster", cursive;
     background-color: #e53935;
+    text-align: center;
     color: white;
-    border-radius: 5px;
+    width: 100vh;
+    height: 150px;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.step1 {
+    position: absolute;
+    top: 550px;
+}
+
+.step2 {
+    position: absolute;
+    top: 850px;
+}
+
+.step3 {
+    position: absolute;
+    top: 1150px;
 }
 
 video {
