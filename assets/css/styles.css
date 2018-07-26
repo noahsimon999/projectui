@@ -1,3 +1,5 @@
+/* Universal  */
+
 html {
     font-size: 1em;
     line-height: 1.4;
@@ -5,9 +7,16 @@ html {
 
 body {
     background-color: black;
+    height: 5000px;
 }
 
+.container {
+    height: 100%;
+}
+
+/* top navigation bar */
 nav {
+    
     border-bottom: 5px solid gold;
 }
 
@@ -15,18 +24,29 @@ nav {
     font-family: "Lobster", cursive;
 }
 
+
+/* Hero content  */
+.heroWrapper {
+    height: 525px;
+}
+
+
+.justifyCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
 #content {
     padding: 15px;
     z-index: 2;
     text-align: center;
     overflow: hidden;
-    word-break: break-word;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-bottom: 100px;
+}
 
+
+.card-content {
+    text-align: center;
 }
 
 #search-box {
@@ -41,15 +61,22 @@ nav {
     height: 50px;
     width: 125px;
     background-color: #e53935;
-    color: white;
+    color: rgb(187, 110, 110);
     border-radius: 50px;
     cursor: pointer;
 }
 
+.wrapper {
+    margin-top: -64px;
+    padding-top: 64px;
 
+}
+.stepContainer {
+    padding: 64px 0;
+}
 
 .page-break {
-    margin-top: 100px;
+    margin-top: 200px;
     font-family: "Lobster", cursive;
     background-color: #e53935;
     text-align: center;
@@ -62,20 +89,7 @@ nav {
     
 }
 
-.step1 {
-    position: absolute;
-    top: 550px;
-}
 
-.step2 {
-    position: absolute;
-    top: 850px;
-}
-
-.step3 {
-    position: absolute;
-    top: 1150px;
-}
 
 video {
     display: block;

@@ -15,7 +15,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="js/modernizr-2.8.3.min.js"></script>
+    <!-- <script src="js/modernizr-2.8.3.min.js"></script> -->
 </head>
 
 <body>
@@ -24,25 +24,22 @@
         <div class="navbar-fixed">
             <nav class="red darken-1">
                 <div class="nav-wrapper container red darken-1">
-                    <a href="#" class="brand-logo">Instant Karaoke</a>
+                    <a href="#" class="brand-logo flow-text">Instant Karaoke</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                         <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li>
-                            <a href="#">Search</a>
+                            <a href="#searchAnchor">Search</a>
                         </li>
                         <li>
-                            <a href="#">Video</a>
+                            <a href="#step1">Video</a>
                         </li>
                         <li>
-                            <a href="#">Lyrics</a>
+                            <a href="#step2">Lyrics</a>
                         </li>
                         <li>
-                            <a href="#">Wiki</a>
-                        </li>
-                        <li>
-                            <a href="#">Shows</a>
+                            <a href="#step3">Shows</a>
                         </li>
                     </ul>
                 </div>
@@ -50,19 +47,16 @@
             <!-- Method to create a dropdown menu at small screen sizes             -->
             <ul class="sidenav" id="mobile-demo">
                 <li>
-                    <a href="#">Search</a>
+                    <a href="#searchAnchor">Search</a>
                 </li>
                 <li>
-                    <a href="#">Video</a>
+                    <a href="#step1">Video</a>
                 </li>
                 <li>
-                    <a href="#">Lyrics</a>
+                    <a href="#step2">Lyrics</a>
                 </li>
                 <li>
-                    <a href="#">Wiki</a>
-                </li>
-                <li>
-                    <a href="#">Shows</a>
+                    <a href="#step3">Shows</a>
                 </li>
             </ul>
         </div>
@@ -76,15 +70,14 @@
         </div>
     </div>
 
-    <div class="container" id="content">
+    <div class="heroWrapper" id="searchAnchor">
+    <div class="container justifyCenter" id="content search">
         <div class="row">
             <div class="col s1"></div>
             <div class="col s10">
                 <div class="card white" id="search-box">
                     <div class="card-content black-text">
-                        <a href="#search">
-                            <h4>Search for your favorite song!</h4>
-                        </a>
+                            <h4>Search for a song to sing along!</h4>
                         <form>
                             <input class="songInput" type="text" placeholder="Enter song name here" size="50px"></input>
                             <input id="artist-input" type="text" placeholder="Enter band name here" size="50px"></input>
@@ -95,37 +88,38 @@
             </div>
         </div>
     </div>
+</div>
 
-    <div class="divider"></div>
-
-    <div class="page-break step1">
+<div class="stepContainer" id="step1">
+    <div class="page-break step" >
         <div class="row">
-            <div class="col s12" id="step1">
+            <div class="col s12" >
                 <h1>Step 1: Play the video to hear the song</h1>
             </div>
         </div>
     </div>
+</div>
 
-
-
-    <div class="page-break step2">
+<div class="stepContainer" id="step2">
+    <div class="page-break step">
         <div class="row">
-            <div class="col s12" id="step2">
+            <div class="col s12">
                 <h1>Step 2: Sing along to these lyrics!</h1>
             </div>
         </div>
     </div>
+</div>
 
 
-
-    <div class="page-break step3">
+<div class="stepContainer" id="step3">
+    <div class="page-break step">
         <div class="row">
-            <div class="col s12" id="step3">
+            <div class="col s12">
                 <h1>Step 3: See the show!</h1>
             </div>
         </div>
     </div>
-
+</div>
 
     <!-- <div class="section">
         <div class="lyrics">
